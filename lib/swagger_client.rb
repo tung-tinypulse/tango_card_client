@@ -53,10 +53,10 @@ require 'swagger_client/models/sender_info_criteria'
 require 'swagger_client/models/sender_info_view'
 
 # APIs
-require 'swagger_client/api/customers_api'
 require 'swagger_client/api/accounts_api'
-require 'swagger_client/api/fund_api'
 require 'swagger_client/api/catalogs_api'
+require 'swagger_client/api/customers_api'
+require 'swagger_client/api/fund_api'
 require 'swagger_client/api/orders_api'
 
 module SwaggerClient
