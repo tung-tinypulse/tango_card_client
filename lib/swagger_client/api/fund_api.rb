@@ -37,7 +37,7 @@ module SwaggerClient
     # @return [Array<(CreditCardView, Fixnum, Hash)>] CreditCardView data, response status code and response headers
     def create_credit_card_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.create_credit_card ..."
+        @api_client.config.logger.debug "Calling API: FundApi.create_credit_card ..."
       end
       # resource path
       local_var_path = "/raas/v2/creditCards"
@@ -66,7 +66,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#create_credit_card\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#create_credit_card\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -88,7 +88,7 @@ module SwaggerClient
     # @return [Array<(CreditCardDepositView, Fixnum, Hash)>] CreditCardDepositView data, response status code and response headers
     def create_credit_card_deposit_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.create_credit_card_deposit ..."
+        @api_client.config.logger.debug "Calling API: FundApi.create_credit_card_deposit ..."
       end
       # resource path
       local_var_path = "/raas/v2/creditCardDeposits"
@@ -117,7 +117,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardDepositView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#create_credit_card_deposit\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#create_credit_card_deposit\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -139,7 +139,7 @@ module SwaggerClient
     # @return [Array<(CreditCardUnregisterView, Fixnum, Hash)>] CreditCardUnregisterView data, response status code and response headers
     def create_credit_card_unregister_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.create_credit_card_unregister ..."
+        @api_client.config.logger.debug "Calling API: FundApi.create_credit_card_unregister ..."
       end
       # resource path
       local_var_path = "/raas/v2/creditCardUnregisters"
@@ -168,7 +168,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardUnregisterView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#create_credit_card_unregister\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#create_credit_card_unregister\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -190,11 +190,11 @@ module SwaggerClient
     # @return [Array<(CreditCardView, Fixnum, Hash)>] CreditCardView data, response status code and response headers
     def get_credit_card_with_http_info(token, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.get_credit_card ..."
+        @api_client.config.logger.debug "Calling API: FundApi.get_credit_card ..."
       end
       # verify the required parameter 'token' is set
       if @api_client.config.client_side_validation && token.nil?
-        fail ArgumentError, "Missing the required parameter 'token' when calling 3FundApi.get_credit_card"
+        fail ArgumentError, "Missing the required parameter 'token' when calling FundApi.get_credit_card"
       end
       # resource path
       local_var_path = "/raas/v2/creditCards/{token}".sub('{' + 'token' + '}', token.to_s)
@@ -223,7 +223,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#get_credit_card\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#get_credit_card\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -245,11 +245,11 @@ module SwaggerClient
     # @return [Array<(CreditCardDepositView, Fixnum, Hash)>] CreditCardDepositView data, response status code and response headers
     def get_credit_card_deposit_with_http_info(deposit_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.get_credit_card_deposit ..."
+        @api_client.config.logger.debug "Calling API: FundApi.get_credit_card_deposit ..."
       end
       # verify the required parameter 'deposit_id' is set
       if @api_client.config.client_side_validation && deposit_id.nil?
-        fail ArgumentError, "Missing the required parameter 'deposit_id' when calling 3FundApi.get_credit_card_deposit"
+        fail ArgumentError, "Missing the required parameter 'deposit_id' when calling FundApi.get_credit_card_deposit"
       end
       # resource path
       local_var_path = "/raas/v2/creditCardDeposits/{depositId}".sub('{' + 'depositId' + '}', deposit_id.to_s)
@@ -278,7 +278,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardDepositView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#get_credit_card_deposit\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#get_credit_card_deposit\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -298,7 +298,7 @@ module SwaggerClient
     # @return [Array<(CreditCardView, Fixnum, Hash)>] CreditCardView data, response status code and response headers
     def list_credit_cards_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 3FundApi.list_credit_cards ..."
+        @api_client.config.logger.debug "Calling API: FundApi.list_credit_cards ..."
       end
       # resource path
       local_var_path = "/raas/v2/creditCards"
@@ -327,7 +327,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CreditCardView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 3FundApi#list_credit_cards\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: FundApi#list_credit_cards\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

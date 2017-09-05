@@ -37,7 +37,7 @@ module SwaggerClient
     # @return [Array<(CustomerViewNew, Fixnum, Hash)>] CustomerViewNew data, response status code and response headers
     def create_customer_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 1CustomersApi.create_customer ..."
+        @api_client.config.logger.debug "Calling API: CustomersApi.create_customer ..."
       end
       # resource path
       local_var_path = "/raas/v2/customers"
@@ -66,7 +66,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CustomerViewNew')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 1CustomersApi#create_customer\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CustomersApi#create_customer\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -90,11 +90,11 @@ module SwaggerClient
     # @return [Array<(AccountView, Fixnum, Hash)>] AccountView data, response status code and response headers
     def create_customer_account_with_http_info(customer_identifier, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 1CustomersApi.create_customer_account ..."
+        @api_client.config.logger.debug "Calling API: CustomersApi.create_customer_account ..."
       end
       # verify the required parameter 'customer_identifier' is set
       if @api_client.config.client_side_validation && customer_identifier.nil?
-        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling 1CustomersApi.create_customer_account"
+        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling CustomersApi.create_customer_account"
       end
       # resource path
       local_var_path = "/raas/v2/customers/{customerIdentifier}/accounts".sub('{' + 'customerIdentifier' + '}', customer_identifier.to_s)
@@ -123,7 +123,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'AccountView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 1CustomersApi#create_customer_account\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CustomersApi#create_customer_account\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -145,11 +145,11 @@ module SwaggerClient
     # @return [Array<(CustomerViewSummary, Fixnum, Hash)>] CustomerViewSummary data, response status code and response headers
     def get_customer_with_http_info(customer_identifier, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 1CustomersApi.get_customer ..."
+        @api_client.config.logger.debug "Calling API: CustomersApi.get_customer ..."
       end
       # verify the required parameter 'customer_identifier' is set
       if @api_client.config.client_side_validation && customer_identifier.nil?
-        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling 1CustomersApi.get_customer"
+        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling CustomersApi.get_customer"
       end
       # resource path
       local_var_path = "/raas/v2/customers/{customerIdentifier}".sub('{' + 'customerIdentifier' + '}', customer_identifier.to_s)
@@ -178,7 +178,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CustomerViewSummary')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 1CustomersApi#get_customer\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CustomersApi#get_customer\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -200,11 +200,11 @@ module SwaggerClient
     # @return [Array<(AccountViewSummary, Fixnum, Hash)>] AccountViewSummary data, response status code and response headers
     def list_customer_accounts1_with_http_info(customer_identifier, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 1CustomersApi.list_customer_accounts1 ..."
+        @api_client.config.logger.debug "Calling API: CustomersApi.list_customer_accounts1 ..."
       end
       # verify the required parameter 'customer_identifier' is set
       if @api_client.config.client_side_validation && customer_identifier.nil?
-        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling 1CustomersApi.list_customer_accounts1"
+        fail ArgumentError, "Missing the required parameter 'customer_identifier' when calling CustomersApi.list_customer_accounts1"
       end
       # resource path
       local_var_path = "/raas/v2/customers/{customerIdentifier}/accounts".sub('{' + 'customerIdentifier' + '}', customer_identifier.to_s)
@@ -233,7 +233,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'AccountViewSummary')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 1CustomersApi#list_customer_accounts1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CustomersApi#list_customer_accounts1\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -253,7 +253,7 @@ module SwaggerClient
     # @return [Array<(CustomerViewSummary, Fixnum, Hash)>] CustomerViewSummary data, response status code and response headers
     def list_customers_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 1CustomersApi.list_customers ..."
+        @api_client.config.logger.debug "Calling API: CustomersApi.list_customers ..."
       end
       # resource path
       local_var_path = "/raas/v2/customers"
@@ -282,7 +282,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CustomerViewSummary')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 1CustomersApi#list_customers\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CustomersApi#list_customers\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

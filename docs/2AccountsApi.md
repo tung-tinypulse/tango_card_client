@@ -1,11 +1,11 @@
-# SwaggerClient::2AccountsApi
+# SwaggerClient::AccountsApi
 
 All URIs are relative to *https://integration-api.tangocard.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_account**](2AccountsApi.md#get_account) | **GET** /raas/v2/accounts/{identifier} | Get details for a specific Account on this Platform.
-[**list_customer_accounts**](2AccountsApi.md#list_customer_accounts) | **GET** /raas/v2/accounts | Get a list of Accounts created on this Platform.
+[**get_account**](AccountsApi.md#get_account) | **GET** /raas/v2/accounts/{identifier} | Get details for a specific Account on this Platform.
+[**list_customer_accounts**](AccountsApi.md#list_customer_accounts) | **GET** /raas/v2/accounts | Get a list of Accounts created on this Platform.
 
 
 # **get_account**
@@ -24,7 +24,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::2AccountsApi.new
+api_instance = SwaggerClient::AccountsApi.new
 
 identifier = "identifier_example" # String | identifier
 
@@ -34,7 +34,7 @@ begin
   result = api_instance.get_account(identifier)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 2AccountsApi->get_account: #{e}"
+  puts "Exception when calling AccountsApi->get_account: #{e}"
 end
 ```
 
@@ -75,14 +75,14 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::2AccountsApi.new
+api_instance = SwaggerClient::AccountsApi.new
 
 begin
   #Get a list of Accounts created on this Platform.
   result = api_instance.list_customer_accounts
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 2AccountsApi->list_customer_accounts: #{e}"
+  puts "Exception when calling AccountsApi->list_customer_accounts: #{e}"
 end
 ```
 

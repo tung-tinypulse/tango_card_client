@@ -1,10 +1,10 @@
-# SwaggerClient::4CatalogsApi
+# SwaggerClient::CatalogsApi
 
 All URIs are relative to *https://integration-api.tangocard.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get_catalog**](4CatalogsApi.md#get_catalog) | **GET** /raas/v2/catalogs | Get all items in the Platform&#39;s Catalog.
+[**get_catalog**](CatalogsApi.md#get_catalog) | **GET** /raas/v2/catalogs | Get all items in the Platform&#39;s Catalog.
 
 
 # **get_catalog**
@@ -23,7 +23,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::4CatalogsApi.new
+api_instance = SwaggerClient::CatalogsApi.new
 
 opts = { 
   verbose: true # BOOLEAN | Verbose payload
@@ -34,7 +34,7 @@ begin
   result = api_instance.get_catalog(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 4CatalogsApi->get_catalog: #{e}"
+  puts "Exception when calling CatalogsApi->get_catalog: #{e}"
 end
 ```
 

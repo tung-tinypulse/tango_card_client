@@ -61,7 +61,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 opts = { 
   form: SwaggerClient::CreateCustomerCriteria.new # CreateCustomerCriteria | <strong>displayName</strong> - a friendly name for this customer <br /><br /><strong>customerIdentifier</strong> - an official identifier for this customer. This identifier needs to be lowercase if alphabetic characters are used.
@@ -72,7 +72,7 @@ begin
   result = api_instance.create_customer(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->create_customer: #{e}"
+  puts "Exception when calling CustomersApi->create_customer: #{e}"
 end
 
 ```
@@ -83,24 +83,24 @@ All URIs are relative to *https://integration-api.tangocard.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*SwaggerClient::1CustomersApi* | [**create_customer**](docs/1CustomersApi.md#create_customer) | **POST** /raas/v2/customers | Create a new Customer on this Platform.
-*SwaggerClient::1CustomersApi* | [**create_customer_account**](docs/1CustomersApi.md#create_customer_account) | **POST** /raas/v2/customers/{customerIdentifier}/accounts | Create an Account under a specific Customer on this Platform.
-*SwaggerClient::1CustomersApi* | [**get_customer**](docs/1CustomersApi.md#get_customer) | **GET** /raas/v2/customers/{customerIdentifier} | Get details for a specific Customer on this Platform.
-*SwaggerClient::1CustomersApi* | [**list_customer_accounts1**](docs/1CustomersApi.md#list_customer_accounts1) | **GET** /raas/v2/customers/{customerIdentifier}/accounts | Get a list of all Accounts created for a specific Customer on this Platform.
-*SwaggerClient::1CustomersApi* | [**list_customers**](docs/1CustomersApi.md#list_customers) | **GET** /raas/v2/customers | Get a list of all Customers on this Platform.
-*SwaggerClient::2AccountsApi* | [**get_account**](docs/2AccountsApi.md#get_account) | **GET** /raas/v2/accounts/{identifier} | Get details for a specific Account on this Platform.
-*SwaggerClient::2AccountsApi* | [**list_customer_accounts**](docs/2AccountsApi.md#list_customer_accounts) | **GET** /raas/v2/accounts | Get a list of Accounts created on this Platform.
-*SwaggerClient::3FundApi* | [**create_credit_card**](docs/3FundApi.md#create_credit_card) | **POST** /raas/v2/creditCards | Register a new Credit Card.
-*SwaggerClient::3FundApi* | [**create_credit_card_deposit**](docs/3FundApi.md#create_credit_card_deposit) | **POST** /raas/v2/creditCardDeposits | Fund an Account.
-*SwaggerClient::3FundApi* | [**create_credit_card_unregister**](docs/3FundApi.md#create_credit_card_unregister) | **POST** /raas/v2/creditCardUnregisters | Unregister a Credit Card.
-*SwaggerClient::3FundApi* | [**get_credit_card**](docs/3FundApi.md#get_credit_card) | **GET** /raas/v2/creditCards/{token} | Get details for a specific Credit Card.
-*SwaggerClient::3FundApi* | [**get_credit_card_deposit**](docs/3FundApi.md#get_credit_card_deposit) | **GET** /raas/v2/creditCardDeposits/{depositId} | Get details for a specific Credit Card Deposit.
-*SwaggerClient::3FundApi* | [**list_credit_cards**](docs/3FundApi.md#list_credit_cards) | **GET** /raas/v2/creditCards | List all credit cards registered on this Platform.
-*SwaggerClient::4CatalogsApi* | [**get_catalog**](docs/4CatalogsApi.md#get_catalog) | **GET** /raas/v2/catalogs | Get all items in the Platform's Catalog.
-*SwaggerClient::5OrdersApi* | [**create_order**](docs/5OrdersApi.md#create_order) | **POST** /raas/v2/orders | Create an Order under a specific Account.
-*SwaggerClient::5OrdersApi* | [**get_order**](docs/5OrdersApi.md#get_order) | **GET** /raas/v2/orders/{referenceOrderID} | Get details for a specific Order.
-*SwaggerClient::5OrdersApi* | [**get_order_resends**](docs/5OrdersApi.md#get_order_resends) | **POST** /raas/v2/orders/{referenceOrderID}/resends | Resend a specific Order.
-*SwaggerClient::5OrdersApi* | [**list_orders**](docs/5OrdersApi.md#list_orders) | **GET** /raas/v2/orders | Get a list of Orders placed under this Platform.
+*SwaggerClient::CustomersApi* | [**create_customer**](docs/CustomersApi.md#create_customer) | **POST** /raas/v2/customers | Create a new Customer on this Platform.
+*SwaggerClient::CustomersApi* | [**create_customer_account**](docs/CustomersApi.md#create_customer_account) | **POST** /raas/v2/customers/{customerIdentifier}/accounts | Create an Account under a specific Customer on this Platform.
+*SwaggerClient::CustomersApi* | [**get_customer**](docs/CustomersApi.md#get_customer) | **GET** /raas/v2/customers/{customerIdentifier} | Get details for a specific Customer on this Platform.
+*SwaggerClient::CustomersApi* | [**list_customer_accounts1**](docs/CustomersApi.md#list_customer_accounts1) | **GET** /raas/v2/customers/{customerIdentifier}/accounts | Get a list of all Accounts created for a specific Customer on this Platform.
+*SwaggerClient::CustomersApi* | [**list_customers**](docs/CustomersApi.md#list_customers) | **GET** /raas/v2/customers | Get a list of all Customers on this Platform.
+*SwaggerClient::AccountsApi* | [**get_account**](docs/AccountsApi.md#get_account) | **GET** /raas/v2/accounts/{identifier} | Get details for a specific Account on this Platform.
+*SwaggerClient::AccountsApi* | [**list_customer_accounts**](docs/AccountsApi.md#list_customer_accounts) | **GET** /raas/v2/accounts | Get a list of Accounts created on this Platform.
+*SwaggerClient::FundApi* | [**create_credit_card**](docs/FundApi.md#create_credit_card) | **POST** /raas/v2/creditCards | Register a new Credit Card.
+*SwaggerClient::FundApi* | [**create_credit_card_deposit**](docs/FundApi.md#create_credit_card_deposit) | **POST** /raas/v2/creditCardDeposits | Fund an Account.
+*SwaggerClient::FundApi* | [**create_credit_card_unregister**](docs/FundApi.md#create_credit_card_unregister) | **POST** /raas/v2/creditCardUnregisters | Unregister a Credit Card.
+*SwaggerClient::FundApi* | [**get_credit_card**](docs/FundApi.md#get_credit_card) | **GET** /raas/v2/creditCards/{token} | Get details for a specific Credit Card.
+*SwaggerClient::FundApi* | [**get_credit_card_deposit**](docs/FundApi.md#get_credit_card_deposit) | **GET** /raas/v2/creditCardDeposits/{depositId} | Get details for a specific Credit Card Deposit.
+*SwaggerClient::FundApi* | [**list_credit_cards**](docs/FundApi.md#list_credit_cards) | **GET** /raas/v2/creditCards | List all credit cards registered on this Platform.
+*SwaggerClient::CatalogsApi* | [**get_catalog**](docs/CatalogsApi.md#get_catalog) | **GET** /raas/v2/catalogs | Get all items in the Platform's Catalog.
+*SwaggerClient::OrdersApi* | [**create_order**](docs/OrdersApi.md#create_order) | **POST** /raas/v2/orders | Create an Order under a specific Account.
+*SwaggerClient::OrdersApi* | [**get_order**](docs/OrdersApi.md#get_order) | **GET** /raas/v2/orders/{referenceOrderID} | Get details for a specific Order.
+*SwaggerClient::OrdersApi* | [**get_order_resends**](docs/OrdersApi.md#get_order_resends) | **POST** /raas/v2/orders/{referenceOrderID}/resends | Resend a specific Order.
+*SwaggerClient::OrdersApi* | [**list_orders**](docs/OrdersApi.md#list_orders) | **GET** /raas/v2/orders | Get a list of Orders placed under this Platform.
 
 
 ## Documentation for Models

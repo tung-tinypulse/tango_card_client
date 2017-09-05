@@ -37,7 +37,7 @@ module SwaggerClient
     # @return [Array<(OrderViewSummary, Fixnum, Hash)>] OrderViewSummary data, response status code and response headers
     def create_order_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 5OrdersApi.create_order ..."
+        @api_client.config.logger.debug "Calling API: OrdersApi.create_order ..."
       end
       # resource path
       local_var_path = "/raas/v2/orders"
@@ -66,7 +66,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'OrderViewSummary')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 5OrdersApi#create_order\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OrdersApi#create_order\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -88,11 +88,11 @@ module SwaggerClient
     # @return [Array<(OrderViewVerbose, Fixnum, Hash)>] OrderViewVerbose data, response status code and response headers
     def get_order_with_http_info(reference_order_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 5OrdersApi.get_order ..."
+        @api_client.config.logger.debug "Calling API: OrdersApi.get_order ..."
       end
       # verify the required parameter 'reference_order_id' is set
       if @api_client.config.client_side_validation && reference_order_id.nil?
-        fail ArgumentError, "Missing the required parameter 'reference_order_id' when calling 5OrdersApi.get_order"
+        fail ArgumentError, "Missing the required parameter 'reference_order_id' when calling OrdersApi.get_order"
       end
       # resource path
       local_var_path = "/raas/v2/orders/{referenceOrderID}".sub('{' + 'referenceOrderID' + '}', reference_order_id.to_s)
@@ -121,7 +121,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'OrderViewVerbose')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 5OrdersApi#get_order\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OrdersApi#get_order\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -143,11 +143,11 @@ module SwaggerClient
     # @return [Array<(ResendView, Fixnum, Hash)>] ResendView data, response status code and response headers
     def get_order_resends_with_http_info(reference_order_id, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 5OrdersApi.get_order_resends ..."
+        @api_client.config.logger.debug "Calling API: OrdersApi.get_order_resends ..."
       end
       # verify the required parameter 'reference_order_id' is set
       if @api_client.config.client_side_validation && reference_order_id.nil?
-        fail ArgumentError, "Missing the required parameter 'reference_order_id' when calling 5OrdersApi.get_order_resends"
+        fail ArgumentError, "Missing the required parameter 'reference_order_id' when calling OrdersApi.get_order_resends"
       end
       # resource path
       local_var_path = "/raas/v2/orders/{referenceOrderID}/resends".sub('{' + 'referenceOrderID' + '}', reference_order_id.to_s)
@@ -176,7 +176,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'ResendView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 5OrdersApi#get_order_resends\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OrdersApi#get_order_resends\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -210,7 +210,7 @@ module SwaggerClient
     # @return [Array<(OrderListView, Fixnum, Hash)>] OrderListView data, response status code and response headers
     def list_orders_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 5OrdersApi.list_orders ..."
+        @api_client.config.logger.debug "Calling API: OrdersApi.list_orders ..."
       end
       # resource path
       local_var_path = "/raas/v2/orders"
@@ -246,7 +246,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'OrderListView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 5OrdersApi#list_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: OrdersApi#list_orders\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

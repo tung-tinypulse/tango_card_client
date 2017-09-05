@@ -37,7 +37,7 @@ module SwaggerClient
     # @return [Array<(CatalogViewVerbose, Fixnum, Hash)>] CatalogViewVerbose data, response status code and response headers
     def get_catalog_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 4CatalogsApi.get_catalog ..."
+        @api_client.config.logger.debug "Calling API: CatalogsApi.get_catalog ..."
       end
       # resource path
       local_var_path = "/raas/v2/catalogs"
@@ -67,7 +67,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'CatalogViewVerbose')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 4CatalogsApi#get_catalog\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: CatalogsApi#get_catalog\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

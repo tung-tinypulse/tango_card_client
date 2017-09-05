@@ -37,11 +37,11 @@ module SwaggerClient
     # @return [Array<(AccountView, Fixnum, Hash)>] AccountView data, response status code and response headers
     def get_account_with_http_info(identifier, opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 2AccountsApi.get_account ..."
+        @api_client.config.logger.debug "Calling API: AccountsApi.get_account ..."
       end
       # verify the required parameter 'identifier' is set
       if @api_client.config.client_side_validation && identifier.nil?
-        fail ArgumentError, "Missing the required parameter 'identifier' when calling 2AccountsApi.get_account"
+        fail ArgumentError, "Missing the required parameter 'identifier' when calling AccountsApi.get_account"
       end
       # resource path
       local_var_path = "/raas/v2/accounts/{identifier}".sub('{' + 'identifier' + '}', identifier.to_s)
@@ -70,7 +70,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'AccountView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 2AccountsApi#get_account\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AccountsApi#get_account\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end
@@ -90,7 +90,7 @@ module SwaggerClient
     # @return [Array<(AccountView, Fixnum, Hash)>] AccountView data, response status code and response headers
     def list_customer_accounts_with_http_info(opts = {})
       if @api_client.config.debugging
-        @api_client.config.logger.debug "Calling API: 2AccountsApi.list_customer_accounts ..."
+        @api_client.config.logger.debug "Calling API: AccountsApi.list_customer_accounts ..."
       end
       # resource path
       local_var_path = "/raas/v2/accounts"
@@ -119,7 +119,7 @@ module SwaggerClient
         :auth_names => auth_names,
         :return_type => 'AccountView')
       if @api_client.config.debugging
-        @api_client.config.logger.debug "API called: 2AccountsApi#list_customer_accounts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
+        @api_client.config.logger.debug "API called: AccountsApi#list_customer_accounts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
       return data, status_code, headers
     end

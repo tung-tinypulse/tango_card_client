@@ -1,14 +1,14 @@
-# SwaggerClient::1CustomersApi
+# SwaggerClient::CustomersApi
 
 All URIs are relative to *https://integration-api.tangocard.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_customer**](1CustomersApi.md#create_customer) | **POST** /raas/v2/customers | Create a new Customer on this Platform.
-[**create_customer_account**](1CustomersApi.md#create_customer_account) | **POST** /raas/v2/customers/{customerIdentifier}/accounts | Create an Account under a specific Customer on this Platform.
-[**get_customer**](1CustomersApi.md#get_customer) | **GET** /raas/v2/customers/{customerIdentifier} | Get details for a specific Customer on this Platform.
-[**list_customer_accounts1**](1CustomersApi.md#list_customer_accounts1) | **GET** /raas/v2/customers/{customerIdentifier}/accounts | Get a list of all Accounts created for a specific Customer on this Platform.
-[**list_customers**](1CustomersApi.md#list_customers) | **GET** /raas/v2/customers | Get a list of all Customers on this Platform.
+[**create_customer**](CustomersApi.md#create_customer) | **POST** /raas/v2/customers | Create a new Customer on this Platform.
+[**create_customer_account**](CustomersApi.md#create_customer_account) | **POST** /raas/v2/customers/{customerIdentifier}/accounts | Create an Account under a specific Customer on this Platform.
+[**get_customer**](CustomersApi.md#get_customer) | **GET** /raas/v2/customers/{customerIdentifier} | Get details for a specific Customer on this Platform.
+[**list_customer_accounts1**](CustomersApi.md#list_customer_accounts1) | **GET** /raas/v2/customers/{customerIdentifier}/accounts | Get a list of all Accounts created for a specific Customer on this Platform.
+[**list_customers**](CustomersApi.md#list_customers) | **GET** /raas/v2/customers | Get a list of all Customers on this Platform.
 
 
 # **create_customer**
@@ -27,7 +27,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 opts = { 
   form: SwaggerClient::CreateCustomerCriteria.new # CreateCustomerCriteria | <strong>displayName</strong> - a friendly name for this customer <br /><br /><strong>customerIdentifier</strong> - an official identifier for this customer. This identifier needs to be lowercase if alphabetic characters are used.
@@ -38,7 +38,7 @@ begin
   result = api_instance.create_customer(opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->create_customer: #{e}"
+  puts "Exception when calling CustomersApi->create_customer: #{e}"
 end
 ```
 
@@ -79,7 +79,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 customer_identifier = "customer_identifier_example" # String | The customerIdentifier for the Customer under which you are creating a new account
 
@@ -92,7 +92,7 @@ begin
   result = api_instance.create_customer_account(customer_identifier, opts)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->create_customer_account: #{e}"
+  puts "Exception when calling CustomersApi->create_customer_account: #{e}"
 end
 ```
 
@@ -134,7 +134,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 customer_identifier = "customer_identifier_example" # String | customerIdentifier
 
@@ -144,7 +144,7 @@ begin
   result = api_instance.get_customer(customer_identifier)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->get_customer: #{e}"
+  puts "Exception when calling CustomersApi->get_customer: #{e}"
 end
 ```
 
@@ -185,7 +185,7 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 customer_identifier = "customer_identifier_example" # String | customerIdentifier
 
@@ -195,7 +195,7 @@ begin
   result = api_instance.list_customer_accounts1(customer_identifier)
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->list_customer_accounts1: #{e}"
+  puts "Exception when calling CustomersApi->list_customer_accounts1: #{e}"
 end
 ```
 
@@ -236,14 +236,14 @@ SwaggerClient.configure do |config|
   config.password = 'YOUR PASSWORD'
 end
 
-api_instance = SwaggerClient::1CustomersApi.new
+api_instance = SwaggerClient::CustomersApi.new
 
 begin
   #Get a list of all Customers on this Platform.
   result = api_instance.list_customers
   p result
 rescue SwaggerClient::ApiError => e
-  puts "Exception when calling 1CustomersApi->list_customers: #{e}"
+  puts "Exception when calling CustomersApi->list_customers: #{e}"
 end
 ```
 
