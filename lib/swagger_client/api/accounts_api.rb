@@ -117,7 +117,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'AccountView')
+        :return_type => 'Array<AccountView>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: AccountsApi#list_customer_accounts\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end

@@ -280,7 +280,7 @@ module SwaggerClient
         :form_params => form_params,
         :body => post_body,
         :auth_names => auth_names,
-        :return_type => 'CustomerViewSummary')
+        :return_type => 'Array<CustomerViewSummary>')
       if @api_client.config.debugging
         @api_client.config.logger.debug "API called: CustomersApi#list_customers\nData: #{data.inspect}\nStatus code: #{status_code}\nHeaders: #{headers}"
       end
